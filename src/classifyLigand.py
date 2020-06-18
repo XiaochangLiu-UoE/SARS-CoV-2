@@ -38,7 +38,7 @@ def makeFile(lines, filename):
 
 
 if __name__ == '__main__':
-    path = 'C:\\Python\\Scrapy\\COVID-19\\Mpro_All_PDBs - ver 2020-03-24\\'
+    path = 'C:\\*\\*\\COVID-19\\Mpro_All_PDBs - ver 2020-03-24\\'
     pdbfiles = os.listdir(path)
     heading = []
     proteins = []
