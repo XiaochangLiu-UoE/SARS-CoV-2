@@ -166,7 +166,7 @@ def clusterMOL(bindingsite, ligand, sdffile, similarity='tanimoto'):
 
 
 if __name__ == '__main__':
-    #extractMOL('myresults.sdf')
+    #extractMOL('results.sdf')
     bindingsite, ligands = detectInteractions(protein='protein_fixed.pdb', ligand='extracted.sdf')
     simimatrix = calSimMatrix(bindingsite=bindingsite, ligand=ligands)
     makeHeatmap(matrix=simimatrix, filename='heatmap_improved_2.csv')
