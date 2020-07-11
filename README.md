@@ -23,7 +23,9 @@ for fragment in fragments:
         contacted_residues = detect_interaction(fragment, protein, interaction)
         binding_site[interaction] = contacted_residues
 ```
-Well, the above code might be a little confusing.
+(For complete implementation, please consult the `classifyLigand.py` and `classifyMols.py` in `src` folder.)
+
+Well, the above code might be a little bit confusing.
 
 - Basically, a binding site is an assemble of amino acid residues contacted by any fragments, which means it will stay at the residue level. But such a bindin site is divided by specific ligand-protein interactions. Therefore, if a residue is contacted by two fragments through two different interactions, this residue will appear twice in the so-called binding site, but in different interaction blocks.
 
