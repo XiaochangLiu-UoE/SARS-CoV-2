@@ -19,7 +19,6 @@ interactions = {'hbonds', 'halogenbonds',
                 'hydrophobic_contacts', 'pi_cation', 'pi_metal'}
 
 for fragment in fragments:
-    Interaction_profile =
     for interaction in interactions:
         contacted_residues = detect_interaction(fragment, protein, interaction)
         binding_site[interaction] = contacted_residues
